@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  servicio_a:
+    image: servicio_a
+    ports:
+      - "5000:3000"
+    environment:
+      - DB_HOST=db-actividades.cyxc6kunv0mo.us-east-1.rds.amazonaws.com
+      - DB_USER=admin
+      - DB_PASSWORD=12345678
+      - DB_NAME=monolito_db
+    depends_on:
+      - servicio_b
+
+  servicio_b:
+    image: servicio_b
+    environment:
+      - DB_HOST=db-actividades.cyxc6kunv0mo.us-east-1.rds.amazonaws.com
+      - DB_USER=admin
+      - DB_PASSWORD=12345678
+      - DB_NAME=monolito_db
