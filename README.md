@@ -53,7 +53,7 @@ Cuando el Servicio B se detiene, el Servicio A sigue funcionando. El registro de
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/KevinAdmp/kevin-morales-microservicios
+git clone https://github.com/KevinAdmp/Kevin-Morales-microservicios
 
 # 2. Entrar a la carpeta
 cd kevin-morales-microservicios/microservicios
